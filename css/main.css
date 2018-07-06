@@ -69,12 +69,18 @@ header {
 
 .row__img-1 {
 	background: url('../img/settings.svg') #1bbc9b no-repeat center center;
-	background-size: 15%;
+	-webkit-background-size: 15% 15%;
+	   -moz-background-size: 15%;
+	     -o-background-size: 15%;
+	        background-size: 15%;
 }
 
 .row__img-2 {
 	background: url('../img/mail.svg') #1bbc9b no-repeat center center;
-	background-size: 15%;
+	-webkit-background-size: 15% 15%;
+	   -moz-background-size: 15%;
+	     -o-background-size: 15%;
+	        background-size: 15%;
 }
 
 .settings .row__text {
@@ -111,15 +117,32 @@ header {
 }
 
 .row__chat {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	   -moz-box-orient: horizontal;
+	   -moz-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 }
 
 .chat .row__img {
 	background: url('../img/chat.svg') #1bbc9b no-repeat center center;
-	background-size: 20%;
+	-webkit-background-size: 20% 20%;
+	   -moz-background-size: 20%;
+	     -o-background-size: 20%;
+	        background-size: 20%;
 	width: 250px;
 	height: 200px;
 }
@@ -138,9 +161,21 @@ header {
 }
 
 .buy__row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	   -moz-box-orient: horizontal;
+	   -moz-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 	margin: 0 auto;
 }
 
@@ -150,7 +185,10 @@ header {
 
 .buy .row__img {
 	background: url('../img/forecast.svg') #1bbc9b no-repeat center center;
-	background-size: 15%;
+	-webkit-background-size: 15% 15%;
+	   -moz-background-size: 15%;
+	     -o-background-size: 15%;
+	        background-size: 15%;
 
 	width: 380px;
 	height: 270px;
@@ -175,10 +213,16 @@ button {
 	margin-bottom: 30px;
 	padding: 13px 18px;
 	
-	box-shadow: 0 1.5px 3px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 1.5px 3px rgba(0,0,0,.2);
+	
+	   -moz-box-shadow: 0 1.5px 3px rgba(0,0,0,.2);
+	
+	        box-shadow: 0 1.5px 3px rgba(0,0,0,.2);
 	border: none;
 	cursor: pointer;
-	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
 	color: #fff;
 }
 
@@ -244,7 +288,9 @@ footer {
 
 	/*	buy	*/
 	.buy__row {
-		flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		    -ms-flex-wrap: nowrap;
+		        flex-wrap: nowrap;
 	}
 }
 
